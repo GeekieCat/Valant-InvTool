@@ -1,0 +1,23 @@
+
+Business Rules:
+
+There are very many business rules provided so I’ll write this very unrestrictive unless other requirements are provided.  This would allow the tool to be modified as it matures if this was a real-world scenario.
+
+
+
+Assumptions for this exercise unless otherwise requirements are provided:
+
+ 
+
+1.       I’m going to assume it’s small since we can put it into memory.
+
+2.       Columns for the exercise are the only necessary ones other than some sort of ID to identity each row in the table. I can assume that I can determine table structure and data elements
+
+ 
+3.       No transaction logging required for this exercise
+
+4.       Remove item completely from inventory, no flag set to be able to query for later of all items removed by day or whatever metrics the customer wants.
+
+5.       Assuming this API will be called from some sort of UI, I will assume that all items that are expiring or have expired based on the user logging into the tool will have a notification popup of what items are expired.  I will not provide a path to give the user options of what to do with those items at this point.
+
+6.       I am not providing any security at this point.  Not enough information and would prefer to have a database to store users, types of users and security levels.  It’s possible to do it without but not efficient in my opinion. 
